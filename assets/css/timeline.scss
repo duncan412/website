@@ -31,9 +31,9 @@
     position: absolute;
     width: 25px;
     height: 25px;
-    right: -17px;
-    background-color: white;
-    border: 4px solid #FF9F55;
+    right: -12px;
+    background-color: $darkgreen;
+    border: 4px solid $darkgreen;
     top: 15px;
     border-radius: 50%;
     z-index: 1;
@@ -79,13 +79,16 @@
 
   /* Fix the circle for containers on the right side */
   .right::after {
-    left: -16px;
+    left: -12px;
+  }
+
+  .tl-container.left .content {
+    text-align: right;
   }
 
   /* The actual content */
   .content {
     padding: 20px 30px;
-    background-color: white;
     position: relative;
     border-radius: 6px;
   }

@@ -2,6 +2,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-pro": "^5.13.0",
     "bootstrap": "^4.4.1",
+    "core-js": "^3.6.5",
     "jquery": "^3.5.0",
     "typed.js": "^2.0.11"
   },

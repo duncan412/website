@@ -36,4 +36,16 @@ $(document).ready(function () {
         typeSpeed: 50,
     });
 
+    $('.switch-language').each(function (index, element) {
+        $(element).on('click', function (event) {
+            let url = window.location.href;
+
+            if (url.indexOf('?') > -1) {
+                url = url.split('?')[0];
+            }
+            url += '?locale=' + $(this).data('language');
+            window.location.href = url;
+        });
+    });
+
 });

@@ -200,3 +200,19 @@ a[data-toggle="collapse"] {
 #header p {
 	color: $darkgreen;
 }
+
+.bottom-fixed {
+	position: fixed;
+    bottom: 0;
+}
+
+.language-switcher {
+	left: 10px;
+    z-index: 2;
+    color: white;
+}
+
+.language-switcher img {
+	max-width: 32px;
+	cursor: pointer;
+}

@@ -27,6 +27,16 @@
 					</ul>
 				</div>
 			</nav>
+
+			{% set locale = 'nl' %}
+			{% if app.request.attributes.get('_locale') is not empty and pp.request.attributes.get('_locale') == 'nl' %}
+				{% set locale = 'en' %}
+			{% endif %}
+
+			<div class="bottom-fixed language-switcher">
+				{{ 'Klik hier voor'|trans }} :
+				<img src="{{asset('build/images/' ~ locale  ~'.png')}}" alt="{{locale}}" class="switch-language" data-language="{{locale}}"/>
+			</div>
 			<div id="content" class="container-fluid">
 				<button type="button" id="sidebarCollapse" class="btn btn-primary d-lg-none">
 					<i class="fa fa-bars"></i>
