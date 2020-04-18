@@ -29,7 +29,7 @@
 			</nav>
 
 			{% set locale = 'nl' %}
-			{% if app.request.attributes.get('_locale') is not empty and pp.request.attributes.get('_locale') == 'nl' %}
+			{% if app.request.getLocale() is not empty and app.request.getLocale() == 'nl' %}
 				{% set locale = 'en' %}
 			{% endif %}
 
