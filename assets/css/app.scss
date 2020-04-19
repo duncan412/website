@@ -12,6 +12,10 @@ $active: false;
 
 @import 'timeline.scss';
 
+html {
+	scroll-behavior: smooth;
+}
+
 body{
 	font-family: $font-primary;
 	font-size: 14px;
@@ -215,4 +219,25 @@ a[data-toggle="collapse"] {
 .language-switcher img {
 	max-width: 32px;
 	cursor: pointer;
+}
+
+#github {
+	background-color: #E7F7F7;
+	font-family: "Roboto", serif;
+	color: #1F97A0;
+}
+
+#comingsoon h1,
+#github h1 {
+	font-family: "Carter One", cursive;
+	color: gray;
+	padding-top: 25px;
+}
+
+.empty {
+	height: 50px;
+}
+
+section:nth-child(even) {
+	background-color: #E7F7F7;
 }

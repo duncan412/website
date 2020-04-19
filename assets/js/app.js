@@ -10,6 +10,9 @@ import '../css/app.scss';
 import Typed from 'typed.js';
 import $ from 'jquery';
 
+require('@fortawesome/fontawesome-pro/css/all.min.css');
+require('@fortawesome/fontawesome-pro/js/all.js');
+
 $(document).ready(function () {
     let fullHeight = function () {
 

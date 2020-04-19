@@ -20,12 +20,16 @@
 			</div>
 		</div>
 		<div class="row m-0">
-			<div class="col-8">
+			<div class="col-10">
 				<p>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				{{ 'Welcome to my portfolio. I am a curious person that never grows old of learning new things. There are no problems, only new challenges to overcome.'|trans }}<br/>
+				{{ 'I am a programmer by heart, but as you can read above, I got many things I like besides it. Besides my study towards Media Technology, I have learned myself PHP and improved it over the years.'|trans }}<br/>
+				{{ 'My favorite movie genres is horror and sci-fi. The games I play and stream are mostly shooter, but I like tactical ones aswell.'|trans }}<br/>
 				</p>
 			</div>
 		</div>
 	</section>
 	{% include 'parts/timeline.twig' %}
+	{% include 'parts/github.twig' %}
+	{% include 'parts/coming_soon.twig' %}
 {% endblock %}

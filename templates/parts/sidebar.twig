@@ -1,0 +1,56 @@
+<nav id="sidebar">
+	<div class="p-4 pt-3 avatar">
+		<a href="{{ path('home')}}" class="mb-5">
+			<img src="{{asset('build/images/profile.png')}}" alt="profile" class="img-fluid"/>
+		</a>
+	</div>
+	<div class="p-4 pt-2">
+		<ul class="list-unstyled components mb-5">
+			<li>
+				<a href="#timeline">{{ 'Timeline'|trans }}</a>
+			</li>
+			<li>
+				<a href="#github">{{ 'Code'|trans }}</a>
+			</li>
+			<li>
+				<a href="#comingsoon">{{ 'Coming soon'|trans }}</a>
+			</li>
+			<li>
+				<div class="row">
+					<div class="col-3">
+						<a href="https://github.com/duncan412" target="_blank">
+							<i class="fab fa-github"></i>
+						</a>
+					</div>
+					<div class="col-3">
+						<a href="https://www.linkedin.com/in/duncanpronk/" target="_blank">
+							<i class="fab fa-linkedin"></i>
+						</a>
+					</div>
+					<div class="col-3">
+						<a href="https://twitter.com/ct412" target="_blank">
+							<i class="fab fa-twitter"></i>
+						</a>
+					</div>
+					<div class="col-3">
+						<a href="https://www.twitch.tv/crazy_tim412" target="_blank">
+							<i class="fab fa-twitch"></i>
+						</a>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+{% set locale = 'nl' %}
+{% if app.request.getLocale() is not empty and app.request.getLocale() == 'nl' %}
+	{% set locale = 'en' %}
+{% endif %}
+
+<div class="sidebar-contact"></div>
+<div class="bottom-fixed language-switcher">
+	{{ 'Klik hier voor'|trans }}
+	:
+	<img src="{{asset('build/images/' ~ locale ~'.png')}}" alt="{{locale}}" class="switch-language" data-language="{{locale}}"/>
+</div>
